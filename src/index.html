@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body id="home">
+<body id="home" class="scrollspy">
     <header id="main-header" style="position: relative;">
         <div class="overlay">
             <div class="navbar-fixed">
@@ -23,12 +23,12 @@
                         <div class="nav-wrapper">
                             <a href="#!" class="brand-logo">BizLand</a>
                             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                            <ul class="right hide-on-med-and-down">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#testimonials">Testimonials</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                <li><a href="" class="btn blue">Download</a></li>
+                            <ul class="right hide-on-med-and-down table-of-contents">
+                                <li><a href="#home" class="white-text">Home</a></li>
+                                <li><a href="#about" class="white-text">About</a></li>
+                                <li><a href="#testimonials" class="white-text">Testimonials</a></li>
+                                <li><a href="#contact" class="white-text">Contact</a></li>
+                                <li><a href="" class="btn blue class white-text">Download</a></li>
                             </ul>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="center grey lighten-3">
+        <section id="about" class="center grey lighten-3 scrollspy">
             <div class="container">
                 <h2>About BizLand</h2>
                 <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate earum velit
@@ -124,7 +124,7 @@
                 </div>
             </div>
         </section>
-        <section id="testimonials" class="blue center white-text">
+        <section id="testimonials" class="blue center white-text scrollspy">
             <h2>What Our Client Say</h2>
             <div class="container">
                 <div class="row" style="margin-top: 30px">
@@ -182,6 +182,9 @@
                 </div>
             </div>
         </section>
+        <section id="contact">
+
+        </section>
         <footer class="page-footer blue-grey">
             <div class="container">
                 <div class="row">
@@ -236,6 +239,7 @@
                 },
                 offset: '90%'
             })
+            $('.scrollspy').scrollSpy({});
         });
     </script>
 </body>
